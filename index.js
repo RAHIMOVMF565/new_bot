@@ -5,4 +5,17 @@ const bot = new TelegramBot(TOKEN, { polling: true });
 bot.on("massage", async function (msg) {
     const chatId = msg.text;
     const firstname = msg.chat.first_name;
-})
+    const menuPhoto = "./image/Menu";
+});
+
+if (text == "/start") {
+    bot.sendMessage(chatId, `Xush kelibsiz, ${firstname}`, {
+reply_markup: {
+    keyboard: [
+        [{ text: "Menu🍟"}]
+    ]
+}
+
+
+    })
+}
