@@ -12,7 +12,8 @@ if (text == "/start") {
     bot.sendMessage(chatId, `Xush kelibsiz, ${firstname}`, {
 reply_markup: {
     keyboard: [
-        [{ text: "Menu🍟"}]
+        [{ text: "Menu🍟"}],
+        [{ text: "☎️ Operatorga ulanish"}]
     ]
 }
 
